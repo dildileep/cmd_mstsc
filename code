@@ -1,0 +1,9 @@
+# cmd_mstsc
+#open MSTSC (Remote desktop ) with cmd (command line)
+
+
+set s=10.xxx.xxx.xxx 
+
+cmdkey /add:%s% /user:administrator /pass:tempopassword
+
+mstsc /v:%s%  /console  
